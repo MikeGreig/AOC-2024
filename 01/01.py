@@ -1,4 +1,4 @@
-input_pairs = [[line.strip().split()[0], line.strip().split()[1]] for line in open("input.txt")]
+input_pairs = [[line.split()[0], line.split()[1]] for line in open("input.txt")]
 list_a, list_b = sorted([pair[0] for pair in input_pairs]), sorted([pair[1] for pair in input_pairs])
 compare_list = zip(list_a, list_b)
 total_distance = 0
